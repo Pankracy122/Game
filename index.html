@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <div class="kasa-wynik">
+      <div id="moneyWrap">
+        <img id="drip" src="drip.png" />
+        <span id="score">0</span>
+
+        <img id="cash3" src="cash2.png" />
+        <span id="score3">0</span>
+      </div>
+    </div>
+
+    <div class="cubes">
+      <div id="first-cube" value="1" class="cube">
+        0
+      </div>
+      <div id="second-cube" value="2" class="cube">
+        0
+      </div>
+      <div id="third-cube" value="3" class="cube">
+        0
+      </div>
+    </div>
+    <div class="spin">
+      <button class="spin-button" onclick="Spin()">
+        <p>Spin</p>
+      </button>
+    </div>
+    <div class="spin-count">
+      <span id="spins">200</span>
+      <button id="multiply" onclick="multi()">
+        x1
+      </button>
+    </div>
+    <div id="info">
+      <p id="timer">10 Spins</p>
+    </div>
+
+    <div id="count-contener">
+      <p id="countdown"></p>
+    </div>
+    <div id="allButtons">
+      <div class="shopBttn">
+        <button id="shopBttn">
+          <b>SHOP</b>
+        </button>
+      </div>
+      <div class="clickerBttn">
+        <button id="clicker">
+          <b>CLICKER</b>
+        </button>
+      </div>
+    </div>
+    <div id="shopWrap">
+      <div id="clickershp">
+        <div id="gameClicker" onclick="actionClicker()">
+          <div class="gameClicker__header">
+            <img id="cash2" src="cash2.png" />
+            <span id="score2">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="sklep1">
+        <div class="row">
+          <div id="item1">
+            <p id="spinx2">Spin x2 :</p>
+
+            <button id="buy-spins" onclick="buyspins()" value="1000">
+              100
+            </button>
+          </div>
+
+          <div class="shop" id="shop">
+            <div class="shop__item">
+              <img class="pet" src="pet1.png" />
+            </div>
+
+            <div class="shop__item">
+              <img class="pet" src="pet2.png" />
+            </div>
+
+            <div class="shop__item">
+              <img class="pet" src="pet31.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="cash-sound" src="cash.mp3"></audio>
+    <audio id="big-sound" src="bigmoney.mp3"></audio>
+    <audio id="err-sound" src="error.mp3"></audio>
+    <audio id="clickx-sound" src="clickx.mp3"></audio>
+    <audio id="alert-sound" src="alert.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
