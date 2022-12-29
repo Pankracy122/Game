@@ -484,7 +484,7 @@ button.spin-button:active::before {
 #gameClicker{
     width: 25vw;
     height: 100%;
-    background-image: url("tloClicker.jpg") ;
+    background-image: url("assets/tloClicker.jpg") ;
     border: white solid 3px;
     border-radius: 12px;
     display: flex;
