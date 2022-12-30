@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="cubes">
+    <div class="cubes" id="cubes">
       <div id="first-cube" value="1" class="cube">
         0
       </div>
@@ -31,13 +31,13 @@
       </div>
     </div>
     <div class="spin">
-      <button class="spin-button" onclick="Spin()">
+      <button class="spin-button" id="spinButton" >
         <p>Spin</p>
       </button>
     </div>
     <div class="spin-count">
       <span id="spins">200</span>
-      <button id="multiply" onclick="multi()">
+      <button id="multiply">
         x1
       </button>
     </div>
@@ -62,7 +62,7 @@
     </div>
     <div id="shopWrap">
       <div id="clickershp">
-        <div id="gameClicker" onclick="actionClicker()">
+        <div id="gameClicker" >
           <div class="gameClicker__header">
             <img id="cash2" src="assets/cash2.png" />
             <span id="score2">0</span>
@@ -75,7 +75,7 @@
           <div id="item1">
             <p id="spinx2">Spin x2 :</p>
 
-            <button id="buy-spins" onclick="buyspins()" value="1000">
+            <button id="buy-spins" value="1000">
               100
             </button>
           </div>
@@ -102,6 +102,6 @@
     <audio id="err-sound" src="assets/error.mp3"></audio>
     <audio id="clickx-sound" src="assets/clickx.mp3"></audio>
     <audio id="alert-sound" src="assets/alert.mp3"></audio>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
